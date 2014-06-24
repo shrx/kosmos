@@ -91,14 +91,45 @@ $(function() {
 
     var dest = 0;
     if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
-        dest = $(document).height() - $(window).height();
+      dest = $(document).height() - $(window).height();
     } else {
-        dest = $(this.hash).offset().top;
+      dest = $(this.hash).offset().top;
     }
-    //go to destination
-    $('html,body').animate({
-        scrollTop: dest
-    }, 1000);
 
+    $('html,body').animate({
+      scrollTop: dest
+    }, 1000);
+  });
+});
+
+$(function() {
+  var input = $('#beta-request-input');
+  var sendRequestLink = $('#send-beta-request');
+
+  var getMailtoMessage = function(redditUsername) {
+    var to = "ucarion@berkeley.edu";
+    var subject = "Kosmos beta access request";
+    var body = [
+      "Hi,",
+      "",
+      "I'd like to request beta access to Kosmos.",
+      "",
+      "My reddit username is: " + redditUsername,
+      "",
+      "My computer is a (Windows/Mac/Linux) (optional): ENTER YOUR INFO HERE",
+      "",
+      "Additionally, here's some info I'd like you to know (optional):",
+      "",
+      "ENTER EXTRA INFO HERE",
+      "",
+      "Thanks!"
+    ].join('\n');
+
+    return "mailto:" + to + "?subject=" + encodeURIComponent(subject)
+      + "&body=" + encodeURIComponent(body);
+  };
+
+  input.change(function() {
+    sendRequestLink.attr('href', getMailtoMessage(input.val()));
   });
 });
