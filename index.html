@@ -1,32 +1,178 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+---
+layout: default
+---
+<!-- <div class="row" id="big-intro">
+  <div class="col-md-10 col-md-offset-1">
+    <h1>Kosmos</h1>
+  </div>
+</div> -->
 
-  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<div class="row fullscreen-row" id="big-intro">
+  <div class="col-md-12">
+    <h1 id="big-kosmos">KOSMOS</h1>
+    <h2 id="big-kosmos-subtitle">
+      The <span class="underline">simple</span> KSP Mod Manager
+    </h2>
 
-  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-  <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-</head>
-<body>
-  <!--[if lt IE 7]>
-    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
+    <h4 id="prompt-demo">
+      <span id="static-prompt-part">
+        $ kosmos install
+      </span>
+      <span id="dynamic-prompt-part"></span>
+    </h4>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+    <div id="request-beta-access-btn">
+      <a href="#explanation" class="btn btn-success btn-lg scroll">
+        Learn more &raquo;
+      </a>
+    </div>
+  </div>
+</div>
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-  <script src="js/main.js"></script>
-</body>
-</html>
+<div class="fullscreen-row" id="explanation">
+  <div id="what-is-kosmos">
+    <h2>Kosmos is a mod manager.</h2>
+    <h4>It downloads and installs mods for you.</h4>
+  </div>
+  <h3 id="awesome-because">Kosmos is awesome because ...</h3>
+
+  <div class="container">
+    <div class="row" id="awesome-because-row">
+      <div class="col-md-4">
+        <div class="pane feature-pane">
+          <h4>It keeps backups of your game</h4>
+
+          <div class="big-icon big-icon" id="feature-backup">
+            <i class="fa fa-copy"></i>
+          </div>
+
+          <p>
+            Any seasoned KSP modder will tell you that keeping copies of your
+            KSP is very important. Without backups, uninstalling mods is
+            impossible.
+          </p>
+          <p>
+            With Kosmos, you don't even need to worry about it. Kosmos will keep
+            backups of your data for you.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="pane feature-pane">
+          <h4>It's human-curated</h4>
+
+          <div class="big-icon" id="feature-curated">
+            <i class="fa fa-users"></i>
+          </div>
+
+          <p>
+            Unlike any other mod manager, Kosmos has <i>humans</i> describe how
+            a package should be installed. This is why Kosmos so much "smarter"
+            than any other mod manager.
+          </p>
+          <p>
+            Did you know that
+            <a href="http://forum.kerbalspaceprogram.com/threads/25241">
+              B9 Aerospace
+            </a>
+            needs two extra fixpacks to work properly? With any other mod
+            manager you would forget this, but with Kosmos, those two extra
+            fixpacks are installed for you <i>automatically</i>.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="pane feature-pane">
+          <h4>It works on all platforms</h4>
+
+          <div class="big-icon" id="feature-platforms">
+            <div class="row">
+              <div class="col-md-4"><i class="fa fa-windows"></i></div>
+              <div class="col-md-4"><i class="fa fa-linux"></i></div>
+              <div class="col-md-4"><i class="fa fa-apple"></i></div>
+            </div>
+          </div>
+
+          <p>
+            Whether you're on PC, Mac, or Linux, Kosmos has you covered.
+          </p>
+          <p>
+            Kerbal Space Program works on all platforms. So should your mod
+            manager.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="fullscreen-row" id="demo">
+  <div id="still-not-convinced">
+    <h2>Still not convinced?</h2>
+    <h4>Here's a quick demo of how powerful Kosmos is.</h4>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <iframe class="col-md-4" src="//www.youtube.com/embed/QYh3BcVFGtM?rel=0" frameborder="0" allowfullscreen></iframe>
+
+      <div class="col-md-8" id="demo-explain">
+        <p>
+          Scott Manley made a video showing how to install the mods for
+          interstellar quest.
+        </p>
+        <p>
+          That video is 20 minutes long.
+        </p>
+      </div>
+    </div>
+
+    <p id="but-with-kosmos">
+      With Kosmos, you could install all of those mods in
+      <b>just a single command</b>:
+    </p>
+
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div id="kosmos-command">
+          <p>
+            $ kosmos install active-texture-management b9 kerbal-alarm-clock kw-rocketry ksp-interstellar ferram deadly-reentry kethane infernal-robotics distant-object-enhancement better-atmospheres remote-tech-2 tac-life-support enhanced-navball kerbal-joint-reinforcement docking-port-alignment-indicator safe-chute kerbal-attachment-system real-chute tac-fuel-balancer
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <a href="#beta-signup" class="btn btn-primary btn-lg scroll" id="get-kosmos">
+      Find out how to get Kosmos &raquo;
+    </a>
+  </div>
+</div>
+
+<div id="beta-signup" class="fullscreen-row">
+  <h2>
+    Kosmos is seeking brave explorers for beta testing.
+  </h2>
+
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <p>
+        If you'd like to be one of the first to test Kosmos, please enter your
+        Reddit username below:
+      </p>
+
+      <div class="input-group">
+        <input class="input-lg form-control" placeholder="Enter your Reddit username">
+        <span class="input-group-btn">
+          <a href="#" class="btn btn-default btn-lg">Send request</a>
+        </span>
+      </div>
+
+      <p>
+        Please send any questions to:
+        <a href="mailto:ucarion@berkeley.edu">ucarion@berkeley.edu</a>
+      </p>
+    </div>
+  </div>
+</div>

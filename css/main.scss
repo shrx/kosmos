@@ -1,0 +1,218 @@
+---
+---
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.fullscreen-row {
+  min-height: 100vh;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+  border-radius: $radius;
+}
+
+.pane {
+  @include border-radius(5px);
+
+  background-color: #FCFCFA;
+  border: solid 1px #E2E0D8;
+  padding: 15px;
+  min-height: 100%;
+}
+
+@mixin big-text-font($font-size) {
+  text-align: center;
+  color: #EEE;
+  font-size: $font-size;
+}
+
+#big-intro {
+  background-image: url('/images/earthrise-bg.jpg');
+  background-size: cover;
+
+  #big-kosmos {
+    @include big-text-font(100px);
+
+    margin-top: 120px;
+    letter-spacing: 15px;
+  }
+
+  #big-kosmos-subtitle {
+    @include big-text-font(30px);
+
+    margin-top: -40px;
+  }
+
+  #prompt-demo {
+    font-weight: 400;
+
+    span {
+      font-family: 'Ubuntu Mono' !important;
+    }
+
+    @include big-text-font(40px);
+
+    margin-top: 90px;
+  }
+
+  #request-beta-access-btn {
+    text-align: center;
+  }
+}
+
+#explanation {
+  h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+  }
+
+  .row {
+    max-width: 100%;
+  }
+
+  padding-bottom: 35px;
+
+  background-color: #F0EFE7;
+
+  #what-is-kosmos {
+    font-size: 30px;
+
+    h2 {
+      padding-top: 0.83em;
+      margin-top: 0px;
+    }
+
+    h4 {
+      margin-top: -17px;
+    }
+  }
+
+  #awesome-because {
+    margin-top: 45px;
+    font-size: 26px;
+  }
+
+  .feature-pane {
+    h4 {
+      font-size: 20px;
+    }
+
+    p {
+      text-align: left;
+      font-size: 17px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .big-icon {
+      font-size: 85px;
+      text-align: center;
+      margin-top: -20px;
+    }
+
+    $color1: #b55e47;
+    $color2: #4cbd68;
+    $color3: #6c52c3;
+
+    // $color1: #61C85F;
+    // $color2: #C25858;
+    // $color3: #5256BB;
+
+    #feature-curated {
+      color: $color1;
+    }
+
+    #feature-backup {
+      color: $color2;
+    }
+
+    #feature-platforms {
+      color: $color3;
+
+      .row {
+        margin-left: 0px;
+      }
+    }
+  }
+}
+
+#demo {
+  background-color: #E9E8E0;
+
+  #still-not-convinced {
+    font-size: 30px;
+
+    h2 {
+      padding-top: 0.83em;
+      margin-top: 0px;
+    }
+
+    h4 {
+      margin-top: -17px;
+    }
+  }
+
+  #demo-explain p {
+    &:first-child {
+      margin-top: 0;
+    }
+
+    text-align: left;
+    font-size: 25px;
+  }
+
+  #but-with-kosmos {
+    font-size: 25px;
+  }
+
+  #kosmos-command {
+    @include border-radius(5px);
+
+    white-space: nowrap;
+    overflow-x: scroll;
+    background-color: #CCCABD;
+
+    p {
+      font-family: 'Ubuntu Mono' !important;
+      font-size: 20px;
+    }
+  }
+
+  #get-kosmos {
+    margin-top: 20px;
+  }
+}
+
+#beta-signup {
+  background-color: #F0EFE7;
+  padding-top: 40px;
+  overflow: hidden;
+
+  h2 {
+    font-size: 35px;
+  }
+
+  p {
+    font-size: 23px;
+  }
+
+  input {
+
+  }
+}
