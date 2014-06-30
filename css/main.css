@@ -85,6 +85,11 @@ h1, h2, h3, h4, h5, h6 {
     color: #6c52c3; }
     #explanation .feature-pane #feature-platforms .row {
       margin-left: 0px; }
+  #explanation #all-platforms {
+    margin-top: 30px;
+    font-size: 20px; }
+  #explanation #see-an-example {
+    margin-top: 30px; }
 
 #demo {
   background-color: #E9E8E0; }
