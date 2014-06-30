@@ -107,7 +107,7 @@ $(function() {
   var sendRequestLink = $('#send-beta-request');
 
   var getMailtoMessage = function(redditUsername) {
-    var to = "ucarion@berkeley.edu";
+    var to = "ulyssecarion@gmail.com";
     var subject = "Kosmos beta access request";
     var body = [
       "Hi,",
